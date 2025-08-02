@@ -78,7 +78,7 @@ The crew utilizes custom tools to interact with financial data sources:
 
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/your-repo/stock_market_research_analyst.git
+    git clone https://github.com/vishalpatel72/Stock_Market_Research_Analyst.git
     cd stock_market_research_analyst
     ```
 2.  Install the dependencies:
