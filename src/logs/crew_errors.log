@@ -1,0 +1,328 @@
+2025-07-17 15:09:17,855 ERROR: Error in YahooFinanceFundamentalTool for RELIANCE.NS: Invalid comparison between dtype=datetime64[ns] and str
+Traceback (most recent call last):
+  File "/home/vishal_patel/projects/stock_market_research_analyst/.venv/lib/python3.11/site-packages/pandas/core/arrays/datetimelike.py", line 551, in _validate_comparison_value
+    other = self._scalar_from_string(other)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vishal_patel/projects/stock_market_research_analyst/.venv/lib/python3.11/site-packages/pandas/core/arrays/datetimes.py", line 537, in _scalar_from_string
+    return Timestamp(value, tz=self.tz)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/tslibs/timestamps.pyx", line 1865, in pandas._libs.tslibs.timestamps.Timestamp.__new__
+  File "pandas/_libs/tslibs/conversion.pyx", line 364, in pandas._libs.tslibs.conversion.convert_to_tsobject
+  File "pandas/_libs/tslibs/conversion.pyx", line 641, in pandas._libs.tslibs.conversion.convert_str_to_tsobject
+  File "pandas/_libs/tslibs/parsing.pyx", line 336, in pandas._libs.tslibs.parsing.parse_datetime_string
+  File "pandas/_libs/tslibs/parsing.pyx", line 666, in pandas._libs.tslibs.parsing.dateutil_parse
+pandas._libs.tslibs.parsing.DateParseError: Unknown datetime string format, unable to parse: None
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vishal_patel/projects/stock_market_research_analyst/.venv/lib/python3.11/site-packages/pandas/core/arrays/datetimelike.py", line 1006, in _cmp_method
+    other = self._validate_comparison_value(other)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vishal_patel/projects/stock_market_research_analyst/.venv/lib/python3.11/site-packages/pandas/core/arrays/datetimelike.py", line 554, in _validate_comparison_value
+    raise InvalidComparison(other)
+pandas.errors.InvalidComparison: None
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vishal_patel/projects/stock_market_research_analyst/src/stock_market_research_analyst/tools/custom_tool.py", line 172, in _run
+    income_stmt = filter_by_date(income_stmt)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vishal_patel/projects/stock_market_research_analyst/src/stock_market_research_analyst/tools/custom_tool.py", line 168, in filter_by_date
+    df = df.loc[:, df.columns >= start]
+                   ^^^^^^^^^^^^^^^^^^^
+  File "/home/vishal_patel/projects/stock_market_research_analyst/.venv/lib/python3.11/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/vishal_patel/projects/stock_market_research_analyst/.venv/lib/python3.11/site-packages/pandas/core/arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vishal_patel/projects/stock_market_research_analyst/.venv/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 7263, in _cmp_method
+    result = op(self._values, other)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vishal_patel/projects/stock_market_research_analyst/.venv/lib/python3.11/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/vishal_patel/projects/stock_market_research_analyst/.venv/lib/python3.11/site-packages/pandas/core/arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vishal_patel/projects/stock_market_research_analyst/.venv/lib/python3.11/site-packages/pandas/core/arrays/datetimelike.py", line 1008, in _cmp_method
+    return invalid_comparison(self, other, op)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vishal_patel/projects/stock_market_research_analyst/.venv/lib/python3.11/site-packages/pandas/core/ops/invalid.py", line 40, in invalid_comparison
+    raise TypeError(f"Invalid comparison between dtype={left.dtype} and {typ}")
+TypeError: Invalid comparison between dtype=datetime64[ns] and str
+2025-07-17 15:16:17,371 ERROR: Error in YahooFinanceFundamentalTool for RELIANCE.NS: Invalid comparison between dtype=datetime64[ns] and str
+Traceback (most recent call last):
+  File "/home/vishal_patel/projects/stock_market_research_analyst/.venv/lib/python3.11/site-packages/pandas/core/arrays/datetimelike.py", line 551, in _validate_comparison_value
+    other = self._scalar_from_string(other)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vishal_patel/projects/stock_market_research_analyst/.venv/lib/python3.11/site-packages/pandas/core/arrays/datetimes.py", line 537, in _scalar_from_string
+    return Timestamp(value, tz=self.tz)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/tslibs/timestamps.pyx", line 1865, in pandas._libs.tslibs.timestamps.Timestamp.__new__
+  File "pandas/_libs/tslibs/conversion.pyx", line 364, in pandas._libs.tslibs.conversion.convert_to_tsobject
+  File "pandas/_libs/tslibs/conversion.pyx", line 641, in pandas._libs.tslibs.conversion.convert_str_to_tsobject
+  File "pandas/_libs/tslibs/parsing.pyx", line 336, in pandas._libs.tslibs.parsing.parse_datetime_string
+  File "pandas/_libs/tslibs/parsing.pyx", line 666, in pandas._libs.tslibs.parsing.dateutil_parse
+pandas._libs.tslibs.parsing.DateParseError: Unknown datetime string format, unable to parse: None
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vishal_patel/projects/stock_market_research_analyst/.venv/lib/python3.11/site-packages/pandas/core/arrays/datetimelike.py", line 1006, in _cmp_method
+    other = self._validate_comparison_value(other)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vishal_patel/projects/stock_market_research_analyst/.venv/lib/python3.11/site-packages/pandas/core/arrays/datetimelike.py", line 554, in _validate_comparison_value
+    raise InvalidComparison(other)
+pandas.errors.InvalidComparison: None
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vishal_patel/projects/stock_market_research_analyst/src/stock_market_research_analyst/tools/custom_tool.py", line 172, in _run
+    income_stmt = filter_by_date(income_stmt)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vishal_patel/projects/stock_market_research_analyst/src/stock_market_research_analyst/tools/custom_tool.py", line 168, in filter_by_date
+    df = df.loc[:, df.columns >= start]
+                   ^^^^^^^^^^^^^^^^^^^
+  File "/home/vishal_patel/projects/stock_market_research_analyst/.venv/lib/python3.11/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/vishal_patel/projects/stock_market_research_analyst/.venv/lib/python3.11/site-packages/pandas/core/arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vishal_patel/projects/stock_market_research_analyst/.venv/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 7263, in _cmp_method
+    result = op(self._values, other)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vishal_patel/projects/stock_market_research_analyst/.venv/lib/python3.11/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/vishal_patel/projects/stock_market_research_analyst/.venv/lib/python3.11/site-packages/pandas/core/arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vishal_patel/projects/stock_market_research_analyst/.venv/lib/python3.11/site-packages/pandas/core/arrays/datetimelike.py", line 1008, in _cmp_method
+    return invalid_comparison(self, other, op)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vishal_patel/projects/stock_market_research_analyst/.venv/lib/python3.11/site-packages/pandas/core/ops/invalid.py", line 40, in invalid_comparison
+    raise TypeError(f"Invalid comparison between dtype={left.dtype} and {typ}")
+TypeError: Invalid comparison between dtype=datetime64[ns] and str
+2025-07-17 15:16:28,950 ERROR: LiteLLM call failed: litellm.RateLimitError: RateLimitError: GroqException - {"error":{"message":"Rate limit reached for model `llama3-70b-8192` in organization `org_01j08514hxftbr8s7ezxzyrtea` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 5686, Requested 1018. Please try again in 7.037s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+
+2025-07-17 16:27:15,342 ERROR: Error in YahooFinanceFundamentalTool for RELIANCE.NS: Invalid comparison between dtype=datetime64[ns] and str
+Traceback (most recent call last):
+  File "/home/vishal_patel/projects/stock_market_research_analyst/.venv/lib/python3.11/site-packages/pandas/core/arrays/datetimelike.py", line 551, in _validate_comparison_value
+    other = self._scalar_from_string(other)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vishal_patel/projects/stock_market_research_analyst/.venv/lib/python3.11/site-packages/pandas/core/arrays/datetimes.py", line 537, in _scalar_from_string
+    return Timestamp(value, tz=self.tz)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/tslibs/timestamps.pyx", line 1865, in pandas._libs.tslibs.timestamps.Timestamp.__new__
+  File "pandas/_libs/tslibs/conversion.pyx", line 364, in pandas._libs.tslibs.conversion.convert_to_tsobject
+  File "pandas/_libs/tslibs/conversion.pyx", line 641, in pandas._libs.tslibs.conversion.convert_str_to_tsobject
+  File "pandas/_libs/tslibs/parsing.pyx", line 336, in pandas._libs.tslibs.parsing.parse_datetime_string
+  File "pandas/_libs/tslibs/parsing.pyx", line 666, in pandas._libs.tslibs.parsing.dateutil_parse
+pandas._libs.tslibs.parsing.DateParseError: Unknown datetime string format, unable to parse: None
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vishal_patel/projects/stock_market_research_analyst/.venv/lib/python3.11/site-packages/pandas/core/arrays/datetimelike.py", line 1006, in _cmp_method
+    other = self._validate_comparison_value(other)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vishal_patel/projects/stock_market_research_analyst/.venv/lib/python3.11/site-packages/pandas/core/arrays/datetimelike.py", line 554, in _validate_comparison_value
+    raise InvalidComparison(other)
+pandas.errors.InvalidComparison: None
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vishal_patel/projects/stock_market_research_analyst/src/stock_market_research_analyst/tools/custom_tool.py", line 172, in _run
+    income_stmt = filter_by_date(income_stmt)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vishal_patel/projects/stock_market_research_analyst/src/stock_market_research_analyst/tools/custom_tool.py", line 168, in filter_by_date
+    df = df.loc[:, df.columns >= start]
+                   ^^^^^^^^^^^^^^^^^^^
+  File "/home/vishal_patel/projects/stock_market_research_analyst/.venv/lib/python3.11/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/vishal_patel/projects/stock_market_research_analyst/.venv/lib/python3.11/site-packages/pandas/core/arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vishal_patel/projects/stock_market_research_analyst/.venv/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 7263, in _cmp_method
+    result = op(self._values, other)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vishal_patel/projects/stock_market_research_analyst/.venv/lib/python3.11/site-packages/pandas/core/ops/common.py", line 76, in new_method
+    return method(self, other)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/vishal_patel/projects/stock_market_research_analyst/.venv/lib/python3.11/site-packages/pandas/core/arraylike.py", line 60, in __ge__
+    return self._cmp_method(other, operator.ge)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vishal_patel/projects/stock_market_research_analyst/.venv/lib/python3.11/site-packages/pandas/core/arrays/datetimelike.py", line 1008, in _cmp_method
+    return invalid_comparison(self, other, op)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vishal_patel/projects/stock_market_research_analyst/.venv/lib/python3.11/site-packages/pandas/core/ops/invalid.py", line 40, in invalid_comparison
+    raise TypeError(f"Invalid comparison between dtype={left.dtype} and {typ}")
+TypeError: Invalid comparison between dtype=datetime64[ns] and str
+2025-07-17 16:27:27,519 ERROR: LiteLLM call failed: litellm.RateLimitError: RateLimitError: GroqException - {"error":{"message":"Rate limit reached for model `llama3-70b-8192` in organization `org_01j08514hxftbr8s7ezxzyrtea` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 4987, Requested 1308. Please try again in 2.941s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+
+2025-07-17 16:47:40,790 INFO: YahooFinanceFundamentalTool response for RELIANCE.NS: 
+Yahoo Finance Fundamentals for RELIANCE.NS
+
+Key Ratios:
+- P/E Ratio: 28.723736
+- P/B Ratio: 2.369641
+- Debt-to-Equity: 36.605
+- ROCE: N/A
+
+Income Statement (head):
+                               2025-03-31    2024-03-31    2023-03-31    2022-03-31  2021-03-31
+Tax Effect Of Unusual Items  0.000000e+00  0.000000e+00 -3.185730e+09  8.188344e+09         NaN
+Tax Rate For Calcs           2.379810e-01  2.454670e-01  2.185000e-01  2.004000e-01         NaN
+Normalized EBITDA            1.834220e+12  1.786770e+12  1.547650e+12  1.222880e+12         NaN
+
+Balance Sheet (head):
+                          2025-03-31    2024-03-31    2023-03-31    2022-03-31  2021-03-31
+Ordinary Shares Number  1.353297e+10  1.353222e+10  1.353219e+10  1.353199e+10         NaN
+Share Issued            1.353297e+10  1.353222e+10  1.353219e+10  1.353199e+10         NaN
+Net Debt                2.410280e+12  2.310820e+12  2.798100e+12  2.327960e+12         NaN
+
+Cash Flow Statement (head):
+                     2025-03-31    2024-03-31    2023-03-31    2022-03-31  2021-03-31
+Free Cash Flow     3.873600e+11  5.905000e+10 -2.595600e+11  1.050900e+11         NaN
+Repayment Of Debt -3.175500e+11 -3.505500e+11 -2.905900e+11 -4.064700e+11         NaN
+Issuance Of Debt   2.637800e+11  6.961000e+11  3.593600e+11  5.934300e+11         NaN
+
+2025-07-17 16:47:54,394 ERROR: LiteLLM call failed: litellm.InternalServerError: litellm.InternalServerError: VertexAIException - {
+  "error": {
+    "code": 503,
+    "message": "The model is overloaded. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+2025-07-17 16:48:51,037 INFO: YahooFinanceFundamentalTool response for RELIANCE.NS: 
+Yahoo Finance Fundamentals for RELIANCE.NS
+
+Key Ratios:
+- P/E Ratio: 28.723736
+- P/B Ratio: 2.369641
+- Debt-to-Equity: 36.605
+- ROCE: N/A
+
+Income Statement (head):
+                               2025-03-31    2024-03-31    2023-03-31    2022-03-31  2021-03-31
+Tax Effect Of Unusual Items  0.000000e+00  0.000000e+00 -3.185730e+09  8.188344e+09         NaN
+Tax Rate For Calcs           2.379810e-01  2.454670e-01  2.185000e-01  2.004000e-01         NaN
+Normalized EBITDA            1.834220e+12  1.786770e+12  1.547650e+12  1.222880e+12         NaN
+
+Balance Sheet (head):
+                          2025-03-31    2024-03-31    2023-03-31    2022-03-31  2021-03-31
+Ordinary Shares Number  1.353297e+10  1.353222e+10  1.353219e+10  1.353199e+10         NaN
+Share Issued            1.353297e+10  1.353222e+10  1.353219e+10  1.353199e+10         NaN
+Net Debt                2.410280e+12  2.310820e+12  2.798100e+12  2.327960e+12         NaN
+
+Cash Flow Statement (head):
+                     2025-03-31    2024-03-31    2023-03-31    2022-03-31  2021-03-31
+Free Cash Flow     3.873600e+11  5.905000e+10 -2.595600e+11  1.050900e+11         NaN
+Repayment Of Debt -3.175500e+11 -3.505500e+11 -2.905900e+11 -4.064700e+11         NaN
+Issuance Of Debt   2.637800e+11  6.961000e+11  3.593600e+11  5.934300e+11         NaN
+
+2025-07-17 16:48:53,405 ERROR: LiteLLM call failed: litellm.InternalServerError: litellm.InternalServerError: VertexAIException - {
+  "error": {
+    "code": 503,
+    "message": "The model is overloaded. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+2025-07-17 16:51:51,468 INFO: YahooFinanceFundamentalTool response for RELIANCE.NS: 
+Yahoo Finance Fundamentals for RELIANCE.NS
+
+Key Ratios:
+- P/E Ratio: 28.723736
+- P/B Ratio: 2.369641
+- Debt-to-Equity: 36.605
+- ROCE: N/A
+
+Income Statement (head):
+                               2025-03-31    2024-03-31    2023-03-31    2022-03-31  2021-03-31
+Tax Effect Of Unusual Items  0.000000e+00  0.000000e+00 -3.185730e+09  8.188344e+09         NaN
+Tax Rate For Calcs           2.379810e-01  2.454670e-01  2.185000e-01  2.004000e-01         NaN
+Normalized EBITDA            1.834220e+12  1.786770e+12  1.547650e+12  1.222880e+12         NaN
+
+Balance Sheet (head):
+                          2025-03-31    2024-03-31    2023-03-31    2022-03-31  2021-03-31
+Ordinary Shares Number  1.353297e+10  1.353222e+10  1.353219e+10  1.353199e+10         NaN
+Share Issued            1.353297e+10  1.353222e+10  1.353219e+10  1.353199e+10         NaN
+Net Debt                2.410280e+12  2.310820e+12  2.798100e+12  2.327960e+12         NaN
+
+Cash Flow Statement (head):
+                     2025-03-31    2024-03-31    2023-03-31    2022-03-31  2021-03-31
+Free Cash Flow     3.873600e+11  5.905000e+10 -2.595600e+11  1.050900e+11         NaN
+Repayment Of Debt -3.175500e+11 -3.505500e+11 -2.905900e+11 -4.064700e+11         NaN
+Issuance Of Debt   2.637800e+11  6.961000e+11  3.593600e+11  5.934300e+11         NaN
+
+2025-07-17 16:52:22,356 INFO: YahooFinanceTechnicalTool response for RELIANCE.NS: 
+Yahoo Finance Technicals for RELIANCE.NS
+
+Price Action Metrics:
+- 52-Week High: 1551.00
+- 52-Week Low: 1425.70
+- Recent 20-Day High: 1551.00
+- Recent 20-Day Low: 1428.10
+- Annualized Volatility: 16.56%
+
+Key Technical Indicators (latest):
+- SMA(20): 1499.32
+- SMA(50): nan
+- SMA(100): nan
+- SMA(200): nan
+- EMA(20): 1490.90
+- EMA(50): 1469.36
+- EMA(100): 1453.90
+- EMA(200): 1443.63
+- RSI(14): 36.63
+- MACD: 9.91 (Signal: 16.70)
+- Bollinger Bands: Upper 1553.66, Lower 1444.97
+
+2025-07-17 17:12:41,022 ERROR: LiteLLM call failed: litellm.RateLimitError: litellm.RateLimitError: VertexAIException - {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.5-pro"
+            },
+            "quotaValue": "100"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "17s"
+      }
+    ]
+  }
+}
+
+2025-07-18 13:18:51,969 ERROR: LiteLLM call failed: litellm.RateLimitError: RateLimitError: GroqException - {"error":{"message":"Rate limit reached for model `llama3-70b-8192` in organization `org_01j08514hxftbr8s7ezxzyrtea` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 5340, Requested 995. Please try again in 3.346s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing","type":"tokens","code":"rate_limit_exceeded"}}
+

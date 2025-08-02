@@ -1,0 +1,81 @@
+2025-07-17 17:11:15,089 INFO: YahooFinanceFundamentalTool response for RELIANCE.NS: 
+Yahoo Finance Fundamentals for RELIANCE.NS
+
+Key Ratios:
+- P/E Ratio: 28.723736
+- P/B Ratio: 2.369641
+- Debt-to-Equity: 36.605
+- ROCE: N/A
+
+Income Statement (head):
+                               2025-03-31    2024-03-31    2023-03-31    2022-03-31  2021-03-31
+Tax Effect Of Unusual Items  0.000000e+00  0.000000e+00 -3.185730e+09  8.188344e+09         NaN
+Tax Rate For Calcs           2.379810e-01  2.454670e-01  2.185000e-01  2.004000e-01         NaN
+Normalized EBITDA            1.834220e+12  1.786770e+12  1.547650e+12  1.222880e+12         NaN
+
+Balance Sheet (head):
+                          2025-03-31    2024-03-31    2023-03-31    2022-03-31  2021-03-31
+Ordinary Shares Number  1.353297e+10  1.353222e+10  1.353219e+10  1.353199e+10         NaN
+Share Issued            1.353297e+10  1.353222e+10  1.353219e+10  1.353199e+10         NaN
+Net Debt                2.410280e+12  2.310820e+12  2.798100e+12  2.327960e+12         NaN
+
+Cash Flow Statement (head):
+                     2025-03-31    2024-03-31    2023-03-31    2022-03-31  2021-03-31
+Free Cash Flow     3.873600e+11  5.905000e+10 -2.595600e+11  1.050900e+11         NaN
+Repayment Of Debt -3.175500e+11 -3.505500e+11 -2.905900e+11 -4.064700e+11         NaN
+Issuance Of Debt   2.637800e+11  6.961000e+11  3.593600e+11  5.934300e+11         NaN
+
+2025-07-17 17:11:58,366 INFO: YahooFinanceTechnicalTool response for RELIANCE.NS: 
+Yahoo Finance Technicals for RELIANCE.NS
+
+Report Date: 2025-07-17
+
+Current Price: 1500.33
+
+Price Action Metrics:
+- 52-Week High: 1603.36
+- 52-Week Low: 1106.39
+- Recent 20-Day High: 1603.36
+- Recent 20-Day Low: 1458.05
+- Annualized Volatility: 21.00%
+
+Key Technical Indicators (latest):
+- SMA(20): 1544.14
+- SMA(50): 1497.55
+- SMA(100): 1473.75
+- SMA(200): 1376.17
+- EMA(20): 1521.66
+- EMA(50): 1503.74
+- EMA(100): 1468.44
+- EMA(200): 1409.05
+- RSI(14): 30.67
+- MACD: -2.27 (Signal: 7.24)
+- Bollinger Bands: Upper 1626.92, Lower 1461.35
+
+2025-07-18 13:18:40,762 INFO: YahooFinanceTechnicalTool response for RELIANCE.NS: 
+Yahoo Finance Technicals for RELIANCE.NS
+
+Report Date: 2025-07-18
+
+Current Price: 1167.43
+
+Price Action Metrics:
+- 52-Week High: 1304.77
+- 52-Week Low: 995.89
+- Recent 20-Day High: 1245.14
+- Recent 20-Day Low: 1142.25
+- Annualized Volatility: 34.55%
+
+Key Technical Indicators (latest):
+- SMA(20): 1188.61
+- SMA(50): 1186.21
+- SMA(100): 1169.74
+- SMA(200): 1171.30
+- EMA(20): 1181.58
+- EMA(50): 1180.73
+- EMA(100): 1172.36
+- EMA(200): 1156.22
+- RSI(14): 38.83
+- MACD: -8.58 (Signal: -4.50)
+- Bollinger Bands: Upper 1235.87, Lower 1141.36
+

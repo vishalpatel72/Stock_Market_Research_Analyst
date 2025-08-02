@@ -1,0 +1,53 @@
+fundamental_analysis_task:
+  description: >
+    Analyze the fundamental and financial health of the company with stock symbol {symbol}.
+    Summarize the latest quarterly and annual results, key financial ratios (P/E, P/B, Debt-to-Equity, ROCE),
+    and examine ownership patterns (institutional, promoter, retail), highlighting recent changes.
+    Use free data sources such as Yahoo Finance and Moneycontrol.
+    Where appropriate, include charts or tables to visually represent key financial metrics and ownership trends.
+  expected_output: >
+    A concise summary of the company's financials, key ratios, and ownership trends, highlighting strengths, weaknesses, and recent changes.
+    Include at least one chart or table to visually convey important financial insights.
+  agent: fundamental_analyst
+
+technical_analysis_task:
+  description: >
+    Perform technical analysis on the stock with symbol {symbol} using historical price and volume data.
+    Identify trends, patterns, support/resistance levels, and generate visualizations (candlesticks, volume, indicators like RSI, MACD, Moving Averages).
+    Use free data sources.
+    Ensure all key findings are supported by clear, annotated charts and visualizations.
+  expected_output: >
+    A technical analysis summary with key findings, annotated charts (such as candlestick charts, indicator overlays, and volume profiles), and actionable insights on price trends and levels.
+  agent: technical_analyst
+
+market_news_analysis_task:
+  description: >
+    Gather and summarize the latest news, press releases, and brokerage reports for {symbol}.
+    Highlight analyst ratings, target prices, and significant market or industry developments.
+    Use free news sources and web scraping as needed.
+    Where possible, include visual summaries (such as sentiment charts or news frequency timelines) to enhance understanding of market sentiment.
+  expected_output: >
+    A news and sentiment summary, including key headlines, analyst opinions, and notable events affecting the stock.
+    Include at least one visualization (e.g., sentiment chart, news timeline) if data allows.
+  agent: market_news_analyst
+
+portfolio_strategy_task:
+  description: >
+    Synthesize the outputs from the fundamental, technical, and news analysis for {symbol}.
+    Provide a clear Buy, Sell, or Hold recommendation, with justification.
+    Suggest entry/exit levels, target prices, and stop-losses.
+    Where relevant, use summary tables or charts to support the investment thesis and illustrate risk/reward scenarios.
+  expected_output: >
+    A holistic investment recommendation with rationale, actionable price levels, and risk considerations.
+    Include summary tables or charts to support the recommendation where appropriate.
+  agent: portfolio_strategist
+
+report_compilation_task:
+  description: >
+    Compile the outputs from all agents into a single, cohesive, and well-formatted report for {symbol}.
+    Integrate all charts, data points, and recommendations, ensuring clarity and completeness.
+    Add a final summary encapsulating the key findings and recommendation.
+    Ensure all visualizations and tables are clearly labeled and referenced in the report.
+  expected_output: >
+    A comprehensive, easy-to-read report (in markdown) covering all aspects of the analysis, with integrated visuals, tables, and a clear final summary.
+  agent: report_writer

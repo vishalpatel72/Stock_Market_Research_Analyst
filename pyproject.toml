@@ -1,0 +1,31 @@
+[project]
+name = "stock_market_research_analyst"
+version = "0.1.0"
+description = "stock_market_research_analyst using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "beautifulsoup4>=4.13.4",
+    "crewai[tools]>=0.148.0,<1.0.0",
+    "matplotlib>=3.10.3",
+    "numpy>=2.2.6",
+    "pandas>=2.3.1",
+    "python-dotenv>=1.1.1",
+    "pyyaml>=6.0.2",
+    "requests>=2.32.4",
+    "yfinance>=0.2.65",
+]
+
+[project.scripts]
+stock_market_research_analyst = "stock_market_research_analyst.main:run"
+run_crew = "stock_market_research_analyst.main:run"
+train = "stock_market_research_analyst.main:train"
+replay = "stock_market_research_analyst.main:replay"
+test = "stock_market_research_analyst.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"
